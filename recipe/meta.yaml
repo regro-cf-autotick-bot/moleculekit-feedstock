@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.18.5
     - cython >=0.29.21
     - toml
-    - versioneer ==0.26
+    - versioneer =0.28
     - pip
   run:
     - python
