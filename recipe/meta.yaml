@@ -1,5 +1,5 @@
 {% set name = "moleculekit" %}
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/moleculekit-{{ version }}.tar.gz
-  sha256: 70127eef8d377ded84def09cc11d60f6366e6c4dfaf28e772bf7be12b2260de5
+  sha256: 77ca32805ab3c729fc47881807be28bccefcba3e97097d66adc9bf49becf561c
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
