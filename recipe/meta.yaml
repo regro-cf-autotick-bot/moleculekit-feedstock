@@ -10,8 +10,9 @@ source:
   sha256: 7f31958aab3b48bc7a579511f5335af502bffd7abdb487ce9759ef5c7ad12465
 
 build:
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  skip: true  # [py<38]
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   build:
@@ -23,11 +24,10 @@ requirements:
     - numpy >=1.18.5
     - cython >=0.29.21
     - toml
-    - versioneer ==0.26
+    - versioneer ==0.28
     - pip
   run:
     - python
-    - scipy
     - pandas >=1.1.2
     - networkx
     - tqdm
