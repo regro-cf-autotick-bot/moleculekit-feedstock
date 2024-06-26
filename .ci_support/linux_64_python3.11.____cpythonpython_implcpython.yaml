@@ -9,7 +9,7 @@ c_stdlib_version:
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge/label/numpy_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -23,7 +23,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.11.* *_cpython
+python_impl:
+- cpython
 target_platform:
 - linux-64
 zip_keys:
@@ -31,3 +33,5 @@ zip_keys:
   - cxx_compiler_version
 - - c_stdlib_version
   - cdt_name
+- - python
+  - python_impl

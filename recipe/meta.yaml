@@ -1,5 +1,5 @@
 {% set name = "moleculekit" %}
-{% set version = "1.8.32" %}
+{% set version = "1.8.35" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/moleculekit-{{ version }}.tar.gz
-  sha256: fad52bbeaa6a19c8183f81d33278f2d0f51c9d254b6aba78ac6a6864258834ac
+  sha256: 0c9ab5af52ae00c237fe987dcc5d3f115275f3c3e36e4bebe5d819e1a90235a5
 
 build:
-  skip: true  # [py<38]
+  skip: true  # [py<39]
+  skip: true  # [python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -28,6 +29,7 @@ requirements:
     - versioneer ==0.28
     - pip
   run:
+    - numpy >=1.18.5
     - python
     - pandas >=1.1.2
     - networkx
