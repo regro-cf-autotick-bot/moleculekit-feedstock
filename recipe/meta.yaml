@@ -48,7 +48,7 @@ test:
 about:
   home: https://github.com/Acellera/moleculekit
   summary: A molecule reading/writing and manipulation package.
-  license: OTHER
+  license: LicenseRef-HTMD
   license_file: LICENSE
 
 extra:
