@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moleculekit-fee
 
 Home: https://github.com/Acellera/moleculekit
 
-Package license: BSD-4-Clause
+Package license: LicenseRef-HTMD
 
 Summary: A molecule reading/writing and manipulation package.
 
@@ -261,4 +261,5 @@ Feedstock Maintainers
 =====================
 
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@stefdoerr](https://github.com/stefdoerr/)
 
