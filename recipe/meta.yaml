@@ -23,7 +23,7 @@ requirements:
   host:
     - python
     - setuptools
-    - numpy >=1.18.5
+    - numpy
     - cython >=0.29.21
     - toml
     - versioneer ==0.28
